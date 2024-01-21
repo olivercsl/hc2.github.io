@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Services
-subtitle: "Discover Savings on Cloud Infrastructure and SaaS Licenses with Ease"
+subtitle: "Discover Savings on Cloud & SaaS Licenses with Ease"
 ---
 Services at Harbour Cloud
 
