@@ -20,7 +20,7 @@ author: Harbour Cloud PTY LTD
 ###############################################
 
 navbar-links:
-  Services: "Services"
+  Services: "services"
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
