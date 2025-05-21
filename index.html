@@ -1,20 +1,511 @@
----
-layout: page
-title: Welcome to Harbour Cloud
-subtitle: Navigating Your Path to Cloud Excellence
----
-    <div class="layout page">
-        <h4>Elevate Your Business with Advanced Cloud Solutions</h4>
-        <p>Harbour Cloud is at the forefront of digital transformation, offering innovative cloud and security solutions tailored to your unique business needs. Our mission is to streamline your transition to the cloud with AWS, Azure, Alibaba Cloud, and Microsoft Office 365.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harbour Cloud Pty Ltd | Reliable Cloud Solutions for Australian Businesses</title>
+  <link rel="icon" href="assets/favicon-large.png" type="image/png">
+  <meta name="description" content="Harbour Cloud delivers secure, efficient cloud and IT licensing solutions to Australian businesses.">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #23272f;
+      --primary-light: #f3f4f6;
+      --accent: #447bbd;
+      --highlight: #d1d5db;
+      --text: #23272f;
+      --bg: #fff;
+      --shadow: 0 2px 16px rgba(35,39,47,0.06);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      background: var(--primary-light);
+      color: var(--text);
+      margin: 0; padding: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.6;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* HEADER + NAV + HERO */
+    .main-header {
+      width: 100%;
+      background: var(--highlight);
+      box-shadow: 0 2px 8px rgba(35,39,47,0.06);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .header-logo {
+      height: 70px;
+      border-radius: 7px;
+      background: var(--highlight);
+    }
+    .header-name {
+      font-size: 1.3rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .main-nav {
+      gap: 32px;
+    }
+    .main-nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      opacity: 0.88;
+      transition: color 0.16s;
+    }
+    .main-nav a:hover { color: var(--accent); opacity: 1; }
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 8px;
+      margin-left: 10px;
+      z-index: 1100;
+    }
+    .hamburger span {
+      display: block;
+      width: 27px;
+      height: 4px;
+      margin: 4px 0;
+      background: var(--accent);
+      border-radius: 2px;
+      transition: all 0.22s;
+    }
+    @media (max-width: 700px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 62px;
+        right: 16px;
+        background: #fff;
+        flex-direction: column;
+        box-shadow: 0 2px 12px rgba(35,39,47,0.09);
+        padding: 16px 24px;
+        border-radius: 9px;
+        z-index: 1001;
+      }
+      .main-nav.open { display: flex !important; }
+      .hamburger { display: block; }
+    }
+    @media (min-width: 701px) {
+      .main-nav {
+        display: flex !important;
+      }
+    }
 
-        <h4>Simplifying Complexity, Enhancing Productivity</h4>
-        <ul>
-            <li><strong>Comprehensive Cloud Services</strong>: Explore a range of cloud solutions designed to boost efficiency and scalability.</li>
-            <li><strong>Security and Compliance</strong>: Prioritize your data protection with our robust security measures.</li>
-            <li><strong>Expertise at Your Service</strong>: Benefit from our seasoned experts dedicated to supporting your cloud journey.</li>
-        </ul>
+    .hero-section {
+      background: var(--bg);
+      padding: 70px 0 64px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 32px;
+    }
+    .hero-title {
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .hero-subtitle {
+      font-size: 1.18rem;
+      color: #445062;
+      margin-bottom: 32px;
+    }
+    .cta-button {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 14px 44px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.15rem;
+      box-shadow: 0 2px 8px rgba(35,39,47,0.09);
+      transition: background-color 0.25s;
+      border: none;
+    }
+    .cta-button:hover { background-color: #265a8f; color: #fff; }
 
-        <h4>Get Started on Your Cloud Journey</h4>
-        <p>Connect with us today and take the first step towards a smarter, more secure cloud experience.</p>
-        <a href="mailto:info@harbourcloud.com.au">Contact Us</a>
+    /* SECTION LAYOUT */
+    section {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background: var(--primary-light);
+      padding: 74px 0 60px 0;
+      box-sizing: border-box;
+      transition: background 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    /* Section background color variants for smooth transitions and harmony */
+    .bg-grey {
+      background: #f3f4f6 !important;
+      transition: background 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    .bg-offwhite {
+      background: #f7fafc !important;
+      transition: background 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    .bg-bluegrey {
+      background: #eef4fa !important;
+      transition: background 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 38px;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    /* SERVICES GRID */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 0;
+      align-items: stretch;
+    }
+    @media (max-width: 1100px) {
+      .services { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .services { grid-template-columns: 1fr; }
+    }
+    .service-card {
+      background: linear-gradient(135deg, var(--highlight) 0%, #ffffff 100%);
+      border-radius: 20px;
+      border: 2px solid var(--accent);
+      padding: 24px 26px 20px 26px;
+      text-align: left;
+      min-height: 340px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+      position: relative;
+      overflow: visible;
+    }
+    .service-card:hover {
+      border-color: var(--primary);
+      background-color: #f9fafb;
+    }
+    .service-icon {
+      margin-top: 10px;
+      margin-bottom: 7px;
+      height: 33px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    .service-title {
+      font-size: 1.17rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 7px;
+    }
+    .service-desc {
+      font-size: 1rem;
+      color: #3e4754;
+      opacity: 0.96;
+    }
+
+    /* ABOUT & CONTACT AS LINES, NO CARD STYLE */
+    .about, .contact-section {
+      margin-top: 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-list {
+      margin: 13px 0 0 0;
+      padding-left: 22px;
+      color: #384258;
+      font-size: 1rem;
+    }
+    .contact-email {
+      font-size: 1.13rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 0.02em;
+      word-break: break-all;
+      margin-top: 8px;
+      text-align: left;
+    }
+    /* Standard link style for contact email */
+    .contact-email a {
+      color: var(--primary);
+      text-decoration: underline;
+      transition: text-decoration 0.2s;
+    }
+    .contact-email a:hover,
+    .contact-email a:focus {
+      text-decoration: underline;
+      color: var(--primary);
+    }
+    .contact-section .cta { margin: 22px 0 0 0; display: inline-block; }
+    .contact-btn {
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    /* SECTION TITLE WITHOUT LEFT ACCENT BAR */
+    .section-label {
+      display: block;
+      font-size: 2rem;
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+      padding-left: 0;
+      text-align: left;
+      position: static;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #23272f;
+      color: #ccd2db;
+      text-align: center;
+      padding: 26px 14px 16px 14px;
+      font-size: 1.01rem;
+      margin-top: 30px;
+      border-top: 2px solid #1a2232;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .section-inner { padding: 0 8px; }
+      .about, .contact-section { padding: 0 8px 0 8px; }
+      h2 { font-size: 1.25rem; margin-bottom: 16px; }
+    }
+  </style>
+  <meta name="robots" content="index, follow">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-inner">
+      <a href="/" class="header-brand">
+        <img src="assets/Harbourcloud-logo.png" alt="Harbour Cloud logo" class="header-logo">
+        <span class="header-name">Harbour Cloud Pty Ltd</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-inner">
+      <h1 class="hero-title">Australia’s Cloud Experts. Reliable. Local. Trusted.</h1>
+      <p class="hero-subtitle">
+        Harbour Cloud delivers secure, efficient cloud and IT licensing solutions to Australian businesses. Get big-business expertise with friendly, personal support.
+      </p>
+      <a href="#services" class="cta-button">See Our Services</a>
+    </div>
+  </section>
+
+  <section id="services" class="bg-grey">
+    <div class="section-inner">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/microsoft.png" alt="Microsoft logo" style="height: 100px; width: auto;">
+          </div>
+          <div class="service-title">Microsoft Licensing Solutions</div>
+          <div class="service-desc">
+            Get expert guidance on Microsoft 365 and Microsoft licensing. We help you choose, manage, and optimise your Microsoft subscriptions with clear advice and no surprises.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/microsoft.png" alt="Office 365 migration" style="height: 100px; width: auto;">
+          </div>
+          <div class="service-title">Office 365 Migration & Managed Services</div>
+          <div class="service-desc">
+            Seamlessly move your business to Office 365 with our expert migration services, then enjoy ongoing managed support for your Microsoft environment. Stay productive and secure.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/security.png" alt="IT Security" style="height: 60px; width: auto;">
+          </div>
+          <div class="service-title">Cybersecurity & Compliance</div>
+          <div class="service-desc">
+            Keep your data protected and your business compliant. Our security experts defend you from threats and keep you ready for audits.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/cloud.png" alt="Cloud infrastructure" style="height: 70px; width: auto;">
+          </div>
+          <div class="service-title">Cloud &amp; Infrastructure</div>
+          <div class="service-desc">
+            Leverage leading cloud platforms to modernise your business IT. We design, deploy, and support secure, scalable cloud infrastructure. Helping you grow with confidence.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/shield.png" alt="Cloudflare security" style="height: 60px; width: auto;">
+          </div>
+          <div class="service-title">Cloudflare Managed Security</div>
+          <div class="service-desc">
+            Protect your business with Cloudflare’s advanced Web Application Firewall (WAF), DDoS protection, and managed security services. We provide setup, optimisation, and ongoing management for robust online defense.
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/savings.png" alt="Cloud cost optimisation" style="height: 56px; width: auto;">
+          </div>
+          <div class="service-title">Cloud Cost Optimisation</div>
+          <div class="service-desc">
+            Maximise savings on your cloud spend. We analyse your current usage, recommend changes, and implement cost controls to ensure you get the most value from your cloud investment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-offwhite">
+    <div class="section-inner">
+      <div class="section-label">About Harbour Cloud</div>
+      <p>
+        Harbour Cloud Pty Ltd is an independent, Australian-based cloud and IT provider. We specialise in cloud licensing, migration, cybersecurity, and support for small to mid-sized businesses. Our mission is to make world-class technology easy, accessible, and affordable. No jargon, no hard sell.
+      </p>
+      <ul class="about-list">
+        <li>Locally owned and operated in Australia</li>
+        <li>Experts in Microsoft, AWS, and cloud security</li>
+        <li>Flexible, honest advice tailored to your business—serving customers in Sydney, Melbourne, and across Australia.</li>
+      </ul>
+      <p>
+        Work with people who speak your language. Experience personal, responsive support at every step.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-bluegrey">
+    <div class="section-inner">
+      <div class="section-label">Contact</div>
+      <div class="contact-support">
+        <div class="contact-message">
+          Ready to upgrade your cloud, licensing, or security?
+          Reach out today. We’ll reply promptly.
+        </div>
+        <div class="contact-email">
+          <strong>Head Office</strong><br>
+          Level 24, Three International Towers<br>
+          300 Barangaroo Avenue<br>
+          Barangaroo<br>
+          NSW 2000<br>
+          Australia<br>
+          <a href="mailto:info@harbourcloud.com.au">info@harbourcloud.com.au</a>
+        </div>
+        <a href="mailto:info@harbourcloud.com.au" class="cta-button contact-btn">
+          Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      © 2025 Harbour Cloud Pty Ltd | ABN 74 673 268 507 | All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      const isOpen = nav.classList.contains('open');
+      if (isOpen) {
+        nav.classList.remove('open');
+        nav.style.display = 'none';
+      } else {
+        nav.classList.add('open');
+        nav.style.display = 'flex';
+      }
+    }
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.querySelector('.main-nav');
+        nav.classList.remove('open');
+        nav.style.display = 'none';
+      });
+    });
+    document.addEventListener('click', function(event) {
+      const nav = document.querySelector('.main-nav');
+      const burger = document.querySelector('.hamburger');
+      if (nav.classList.contains('open') &&
+          !nav.contains(event.target) &&
+          !burger.contains(event.target)) {
+        nav.classList.remove('open');
+        nav.style.display = 'none';
+      }
+    });
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.main-nav');
+      nav.classList.remove('open');
+      nav.style.display = 'none';
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.querySelector('.main-nav');
+      if (nav) {
+        nav.classList.remove('open');
+        nav.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
