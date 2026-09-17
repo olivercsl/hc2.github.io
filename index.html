@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harbour Cloud | Cloud Infrastructure & Microsoft Licensing Specialists</title>
+<title>Azure, AWS and AI Projects Sydney | Harbour Cloud</title>
+<meta name="description" content="Sydney reseller and MSP for Azure, Microsoft 365 and AWS, with an AI focus. AI projects designed, built and run for Australian firms, plus private AI.">
+<link rel="canonical" href="https://harbourcloud.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Harbour Cloud">
+<meta property="og:title" content="AI projects, designed, built and run on Azure and AWS">
+<meta property="og:description" content="A small, fast-moving Sydney team: Azure, Microsoft 365 licensing and AWS supplied and managed, with AI projects built on top.">
+<meta property="og:url" content="https://harbourcloud.com.au/">
 <link rel="icon" type="image/png" href="assets/favicon-large.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://harbourcloud.com.au/#business",
+      "name": "Harbour Cloud",
+      "legalName": "Harbour Cloud Pty Ltd",
+      "slogan": "AI projects designed, built and run on Azure and AWS, by a small team that supplies and manages your cloud.",
+      "url": "https://harbourcloud.com.au/",
+      "logo": "https://harbourcloud.com.au/assets/harbourcloud-logo.png",
+      "image": "https://harbourcloud.com.au/assets/harbourcloud-logo.png",
+      "email": "oliver@harbourcloud.com.au",
+      "taxID": "74 673 268 507",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Level 24, Three International Towers, 300 Barangaroo Avenue",
+        "addressLocality": "Barangaroo",
+        "addressRegion": "NSW",
+        "postalCode": "2000",
+        "addressCountry": "AU"
+      },
+      "areaServed": { "@type": "Country", "name": "Australia" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI and Microsoft cloud services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Azure AI Projects", "serviceType": "Azure AI development and consulting", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agents and Automation", "serviceType": "AI agent development and business process automation", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private AI Inference", "serviceType": "On-premises AI inference clusters", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microsoft Copilot Readiness", "serviceType": "Microsoft 365 Copilot readiness assessment", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AWS Reseller and Managed AWS", "serviceType": "AWS managed services, accounts and consolidated billing", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AWS Cost Optimisation", "serviceType": "AWS cost optimisation and Well-Architected reviews", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed Microsoft 365", "serviceType": "Microsoft 365 managed services", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microsoft 365 Security Hardening", "serviceType": "Microsoft 365 security assessment and hardening", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Licensing and Renewals", "serviceType": "Microsoft 365 licensing", "areaServed": "Australia" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microsoft CSP Partner Services", "serviceType": "Microsoft Cloud Solution Provider", "areaServed": "Australia" } }
+        ]
+      },
+      "knowsAbout": [
+        "Azure AI", "Azure OpenAI", "Azure AI Foundry", "AI agents", "Agentic workflows",
+        "Retrieval augmented generation", "Document automation", "AI readiness", "AI data governance",
+        "On-premises AI inference", "Open-source language models", "Microsoft 365 Copilot",
+        "Microsoft 365", "Microsoft Defender", "Microsoft Intune", "Microsoft Entra ID", "Microsoft Purview",
+        "Essential Eight", "Microsoft Cloud Solution Provider", "Azure cost management",
+        "AWS", "AWS Organizations", "AWS consolidated billing", "AWS cost optimisation",
+        "AWS Well-Architected", "AWS Control Tower", "Alibaba Cloud"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://harbourcloud.com.au/#website",
+      "url": "https://harbourcloud.com.au/",
+      "name": "Harbour Cloud",
+      "inLanguage": "en-AU",
+      "publisher": { "@id": "https://harbourcloud.com.au/#business" }
+    }
+  ]
+}
+</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,7 +97,6 @@
   }
 
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'DM Sans', sans-serif;
     color: var(--text);
@@ -36,7 +104,6 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-
   h1,h2,h3,h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
 
   /* ── NAVBAR ── */
@@ -53,127 +120,53 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 32px; height: 68px;
   }
-  .nav-logo {
-    display: flex; align-items: center; gap: 10px;
-    text-decoration: none; color: var(--navy);
-  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
   .nav-logo img { height: 66px; width: auto; }
   .nav-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; color: var(--navy); }
-  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-  .nav-links a {
-    text-decoration: none; color: var(--muted);
-    font-size: 14px; font-weight: 500;
-    transition: color 0.2s;
-  }
+  .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--muted); font-size: 14px; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--blue); }
   .btn-nav {
     background: var(--blue); color: #fff !important;
     padding: 10px 20px; border-radius: 8px;
     font-size: 14px; font-weight: 600;
-    text-decoration: none; transition: all 0.2s;
-    white-space: nowrap;
+    text-decoration: none; transition: all 0.2s; white-space: nowrap;
   }
   .btn-nav:hover { background: var(--blue-light) !important; color: #fff !important; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,87,255,0.3); }
 
+  /* ── BUTTONS ── */
+  .btn-primary {
+    background: var(--blue); color: #fff;
+    padding: 14px 28px; border-radius: 9px;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none; transition: all 0.2s;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,87,255,0.35); }
+  .btn-secondary {
+    background: transparent; color: var(--navy);
+    padding: 14px 28px; border-radius: 9px;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none; transition: all 0.2s;
+    border: 1.5px solid var(--border);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .btn-secondary:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-pale); }
+  .btn-light {
+    background: #fff; color: var(--navy);
+    padding: 14px 28px; border-radius: 9px;
+    font-weight: 600; font-size: 15px;
+    text-decoration: none; transition: all 0.2s;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .btn-light:hover { background: var(--blue-pale); transform: translateY(-2px); }
+
   /* ── HERO ── */
-  .hero {
-    padding: 140px 32px 100px;
-    background: var(--white);
-    position: relative; overflow: hidden;
-  }
-  .hero-grid {
-    position: absolute; inset: 0;
-    pointer-events: none;
-  }
-  .hero-grid svg {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-  }
+  .hero { padding: 140px 32px 96px; background: var(--white); position: relative; overflow: hidden; }
+  .hero-grid { position: absolute; inset: 0; pointer-events: none; }
+  .hero-grid svg { position: absolute; inset: 0; width: 100%; height: 100%; }
   .hero-inner { max-width: 1200px; margin: 0 auto; position: relative; }
-
-  /* Two-column hero layout */
-  .hero-two-col {
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 56px;
-    align-items: center;
-    margin-bottom: 56px;
-  }
-  .hero-left { }
-  .hero-right { }
-
-  /* AI comparison card */
-  .ai-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: 0 4px 32px rgba(0,40,120,0.10);
-    overflow: hidden;
-  }
-  .ai-card-header {
-    padding: 20px 24px 16px;
-    border-bottom: 1px solid var(--border);
-  }
-  .ai-card-label {
-    font-size: 11px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 2px;
-    color: var(--blue); margin-bottom: 4px;
-  }
-  .ai-card-title {
-    font-family: 'Sora', sans-serif;
-    font-size: 15px; font-weight: 700; color: var(--navy);
-  }
-  .ai-table { }
-  .ai-table-head {
-    display: grid; grid-template-columns: 1fr 72px 72px;
-    padding: 10px 24px;
-    background: var(--surface);
-    font-size: 11px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 1px;
-    color: var(--muted);
-  }
-  .ai-table-head span:not(:first-child) { text-align: right; }
-  .ai-table-row {
-    display: grid; grid-template-columns: 1fr 72px 72px;
-    padding: 14px 24px;
-    border-bottom: 1px solid var(--border);
-    align-items: center;
-    transition: background 0.15s;
-  }
-  .ai-table-row:hover { background: var(--surface); }
-  .ai-row-highlight { background: rgba(0,87,255,0.02); }
-  .ai-row-best { background: rgba(0,87,255,0.04); }
-  .ai-row-best:hover { background: rgba(0,87,255,0.07); }
-  .ai-model-name { display: flex; flex-direction: column; gap: 3px; }
-  .ai-model-label { font-size: 14px; font-weight: 600; color: var(--text); }
-  .ai-model-sub { font-size: 11px; color: var(--muted); }
-  .ai-pill {
-    display: inline-block;
-    background: var(--blue-pale); color: var(--blue);
-    font-size: 10px; font-weight: 700;
-    padding: 2px 8px; border-radius: 10px;
-    width: fit-content;
-  }
-  .ai-pill-best {
-    background: #DCFCE7; color: #166534;
-  }
-  .ai-price {
-    font-size: 13px; font-weight: 600;
-    color: var(--muted); text-align: right;
-  }
-  .ai-price-good { color: var(--blue); }
-  .ai-price-best { color: #16a34a; font-size: 14px; }
-  .ai-card-footer {
-    padding: 14px 24px;
-    background: var(--navy);
-    display: flex; flex-direction: column; gap: 6px;
-  }
-  .ai-saving-badge {
-    font-size: 13px; font-weight: 700; color: #86efac;
-  }
-  .ai-card-note {
-    font-size: 12px; color: rgba(255,255,255,0.7);
-  }
+  .hero-two-col { display: grid; grid-template-columns: 1fr 420px; gap: 56px; align-items: center; }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px;
     background: var(--blue-pale); color: var(--blue);
@@ -184,167 +177,120 @@
   }
   .hero-badge::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); }
   .hero h1 {
-    font-size: clamp(36px, 5vw, 60px);
+    font-size: clamp(34px, 4.4vw, 52px);
     font-weight: 800; color: var(--navy);
-    max-width: 760px; margin-bottom: 22px;
-    letter-spacing: -1.5px;
+    max-width: 720px; margin-bottom: 22px;
+    letter-spacing: -1.2px;
   }
   .hero h1 span { color: var(--blue); }
-  .hero p {
-    font-size: 18px; color: var(--muted);
-    max-width: 580px; margin-bottom: 40px;
-    font-weight: 400; line-height: 1.7;
-  }
-  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; }
-  .btn-primary {
-    background: var(--blue); color: #fff;
-    padding: 14px 28px; border-radius: 9px;
-    font-weight: 600; font-size: 15px;
-    text-decoration: none; transition: all 0.2s;
-    display: inline-flex; align-items: center; gap: 8px;
-  }
-  .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,87,255,0.35); }
-  .btn-secondary {
-    background: transparent; color: var(--navy);
-    padding: 14px 28px; border-radius: 9px;
-    font-weight: 600; font-size: 15px;
-    text-decoration: none; transition: all 0.2s;
-    border: 1.5px solid var(--border);
-  }
-  .btn-secondary:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-pale); }
+  .hero-sub { font-size: 18px; color: var(--muted); max-width: 600px; margin-bottom: 36px; line-height: 1.7; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
 
-  .hero-stats {
+  .outcomes {
     display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 1px; background: var(--border);
     border: 1px solid var(--border); border-radius: var(--radius);
     overflow: hidden; max-width: 860px;
   }
-  .stat {
-    background: var(--white);
-    padding: 24px 28px;
-  }
-  .stat-num {
-    font-family: 'Sora', sans-serif;
-    font-size: 30px; font-weight: 800; color: var(--navy);
-    margin-bottom: 4px;
-  }
-  .stat-num span { color: var(--blue); }
-  .stat-label { font-size: 13px; color: var(--muted); font-weight: 500; line-height: 1.4; }
+  .outcome { background: var(--white); padding: 22px 24px; }
+  .outcome-word { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+  .outcome:nth-child(odd) .outcome-word { color: var(--blue); }
+  .outcome-label { font-size: 13px; color: var(--muted); font-weight: 500; line-height: 1.4; }
 
-  .platforms {
-    margin-top: 56px; padding-top: 48px;
-    border-top: 1px solid var(--border);
-    max-width: 860px;
+  .hero-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 16px; box-shadow: 0 4px 32px rgba(0,40,120,0.10);
+    overflow: hidden;
   }
-  .platforms p { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 18px; }
-  .platform-badges { display: flex; gap: 12px; flex-wrap: wrap; }
-  .platform-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--surface); border: 1px solid var(--border);
-    padding: 8px 16px; border-radius: 8px;
-    font-size: 13px; font-weight: 600; color: var(--text);
-  }
-  .platform-icon { font-size: 16px; }
+  .hero-card-header { padding: 20px 24px 16px; border-bottom: 1px solid var(--border); }
+  .eyebrow { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--blue); margin-bottom: 4px; }
+  .hero-card-title { font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); }
+  .steps { list-style: none; }
+  .step { display: grid; grid-template-columns: 34px 1fr; padding: 13px 24px; border-bottom: 1px solid var(--border); align-items: start; }
+  .step:last-child { border-bottom: none; }
+  .step-num { font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 700; color: var(--blue); padding-top: 2px; }
+  .step-title { display: block; font-size: 14px; font-weight: 600; color: var(--text); }
+  .step-sub { display: block; font-size: 12px; color: var(--muted); }
+  .hero-card-footer { padding: 14px 24px; background: var(--navy); }
+  .hero-card-footer strong { display: block; font-size: 14px; color: #86efac; }
+  .hero-card-footer span { font-size: 12px; color: rgba(255,255,255,0.7); }
 
   /* ── SECTION COMMONS ── */
   section { padding: 96px 32px; }
   .section-inner { max-width: 1200px; margin: 0 auto; }
-  .section-label {
-    font-size: 11px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 2px;
-    color: var(--blue); margin-bottom: 14px;
-  }
-  .section-title {
-    font-size: clamp(28px, 3.5vw, 42px);
-    font-weight: 800; color: var(--navy);
-    letter-spacing: -1px; margin-bottom: 16px;
-  }
-  .section-sub { font-size: 17px; color: var(--muted); max-width: 560px; line-height: 1.7; }
-
-  /* ── LICENSING ── */
-  .licensing { background: var(--surface); }
-  .licensing-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-top: 56px; }
-  .feature-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin: 32px 0; }
-  .feature-list li {
-    display: flex; align-items: flex-start; gap: 12px;
-    font-size: 15px; color: var(--text); font-weight: 400;
-  }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--blue); margin-bottom: 14px; }
+  .section-title { font-size: clamp(28px, 3.5vw, 42px); font-weight: 800; color: var(--navy); letter-spacing: -1px; margin-bottom: 16px; }
+  .section-sub { font-size: 17px; color: var(--muted); max-width: 720px; line-height: 1.7; }
+  .bg-surface { background: var(--surface); }
   .check {
     width: 22px; height: 22px; border-radius: 50%;
     background: var(--blue-pale); flex-shrink: 0;
     display: flex; align-items: center; justify-content: center;
     font-size: 11px; color: var(--blue); margin-top: 1px;
   }
-  .pricing-card {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--radius); overflow: hidden;
-    box-shadow: var(--shadow);
-  }
-  .pricing-card-header {
-    background: var(--navy-mid); padding: 18px 24px;
-    display: grid; grid-template-columns: 1fr auto;
-    gap: 16px; align-items: center;
-    border-bottom: 2px solid var(--blue);
-  }
-  .pricing-card-header span { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 1px; }
-  .pricing-card-header .col-hc { color: #fff; font-size: 13px; }
-  .pricing-row {
-    display: grid; grid-template-columns: 1fr auto;
-    gap: 16px; align-items: center;
-    padding: 16px 24px; border-bottom: 1px solid var(--border);
-    font-size: 14px;
-  }
-  .pricing-row:last-child { border-bottom: none; }
-  .pricing-row .plan-name { font-weight: 500; color: var(--text); }
-  .savings-badge {
-    background: #DCFCE7; color: #166534;
-    padding: 5px 11px; border-radius: 20px;
-    font-size: 12px; font-weight: 700;
-    white-space: nowrap;
-  }
-  .pricing-note { padding: 14px 24px; font-size: 12px; color: var(--muted); background: var(--surface); line-height: 1.6; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-top: 52px; }
+  .feature-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+  .feature-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text); }
 
-  /* ── CLOUD ARCHITECTURE ── */
-  .arch { background: var(--white); }
-  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
-  .card {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 32px;
-    transition: all 0.25s; cursor: default;
+  .side-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .side-card-header {
+    background: var(--navy-mid); padding: 18px 24px; border-bottom: 2px solid var(--blue);
+    font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 1px;
   }
+  .side-card-list { list-style: none; }
+  .side-card-list li { display: flex; gap: 12px; align-items: flex-start; padding: 14px 24px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .side-card-list li:last-child { border-bottom: none; }
+  .side-card-note { padding: 14px 24px; font-size: 13px; color: var(--muted); background: var(--surface); line-height: 1.6; }
+
+  .dark-card { background: var(--navy); border-radius: 16px; padding: 40px; color: #fff; }
+  .dark-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+  .dark-card p { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.7; }
+
+  /* ── CARDS ── */
+  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+  .card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; transition: all 0.25s; }
   .card:hover { border-color: var(--blue); box-shadow: var(--shadow-hover); transform: translateY(-4px); }
+  .card--featured { border-color: var(--blue); box-shadow: 0 4px 24px rgba(0,87,255,0.12); }
   .card-icon {
-    width: 48px; height: 48px; border-radius: 12px;
-    background: var(--blue-pale); display: flex; align-items: center; justify-content: center;
-    font-size: 22px; margin-bottom: 20px;
+    width: 48px; height: 48px; border-radius: 12px; background: var(--blue-pale);
+    display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 18px;
   }
   .card h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
   .card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+  .section-cta { margin-top: 44px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .notes-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+  .note { border: 1px dashed var(--border); border-radius: var(--radius); padding: 20px 24px; font-size: 14px; color: var(--muted); line-height: 1.7; }
+  .note strong { color: var(--navy); }
 
-  /* ── SECURITY ── */
-  .security { background: var(--navy); }
-  .security .section-label { color: var(--blue-light); }
-  .security .section-title { color: var(--white); }
-  .security .section-sub { color: rgba(255,255,255,0.55); }
-  .security .cards-grid { margin-top: 52px; }
-  .security .card {
-    background: rgba(255,255,255,0.04);
-    border-color: rgba(255,255,255,0.1);
-  }
-  .security .card:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: var(--blue-light);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-  }
-  .security .card-icon { background: rgba(0,87,255,0.2); }
-  .security .card h3 { color: var(--white); }
-  .security .card p { color: rgba(255,255,255,0.55); }
+  /* ── DARK SECTION ── */
+  .dark { background: var(--navy); }
+  .dark .section-label { color: var(--blue-light); }
+  .dark .section-title { color: var(--white); }
+  .dark .section-sub { color: rgba(255,255,255,0.65); }
+  .dark .card { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
+  .dark .card:hover { background: rgba(255,255,255,0.08); border-color: var(--blue-light); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+  .dark .card-icon { background: rgba(0,87,255,0.2); }
+  .dark .card h3 { color: var(--white); }
+  .dark .card p { color: rgba(255,255,255,0.6); }
 
-  /* ── ABOUT ── */
-  .about { background: var(--surface); }
-  .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 56px; }
+  /* ── COMPARE TABLE ── */
+  .compare-wrap { overflow-x: auto; margin-top: 44px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+  .compare { width: 100%; min-width: 600px; border-collapse: collapse; font-size: 14px; }
+  .compare th, .compare td { text-align: left; padding: 16px 22px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .compare thead th { font-family: 'Sora', sans-serif; font-size: 13px; color: var(--navy); background: var(--surface); }
+  .compare thead th.hc { background: var(--navy-mid); color: #fff; }
+  .compare tbody th { font-weight: 600; color: var(--text); width: 30%; }
+  .compare td { color: var(--muted); }
+  .compare td.hc { color: var(--navy); font-weight: 600; background: rgba(0,87,255,0.04); }
+  .compare tr:last-child th, .compare tr:last-child td { border-bottom: none; }
+  .compare-note { margin-top: 18px; font-size: 14px; color: var(--muted); }
+
+  /* ── CHIPS, ABOUT, CONTACT ── */
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .chip { background: var(--surface); border: 1px solid var(--border); padding: 9px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; color: var(--text); }
+  .fit-note { margin-top: 28px; font-size: 15px; color: var(--muted); max-width: 720px; }
   .about-text p { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 20px; }
-  .trust-items { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+  .trust-items { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
   .trust-item {
     display: flex; align-items: center; gap: 14px;
     padding: 14px 20px; background: var(--white);
@@ -352,281 +298,109 @@
     font-size: 14px; font-weight: 500; color: var(--text);
   }
   .trust-item .icon { font-size: 20px; }
-  .about-card {
-    background: var(--navy); border-radius: 16px;
-    padding: 40px; color: white;
-  }
-  .about-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
-  .about-card p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.7; margin-bottom: 28px; }
-  .about-address { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; }
-  .about-address p { color: rgba(255,255,255,0.5); font-size: 13px; line-height: 1.8; margin-bottom: 0; }
+  .about-address { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 24px; }
+  .about-address p { color: rgba(255,255,255,0.55); font-size: 13px; line-height: 1.8; }
   .about-address strong { color: rgba(255,255,255,0.85); font-weight: 600; }
-
-  /* ── CONTACT ── */
-  .contact { background: var(--white); }
-  .contact-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; margin-top: 56px; }
-  .contact-info { display: flex; flex-direction: column; gap: 24px; }
-  .contact-info-item { display: flex; gap: 16px; align-items: flex-start; }
-  .contact-info-icon {
-    width: 44px; height: 44px; border-radius: 10px;
-    background: var(--blue-pale); display: flex; align-items: center;
-    justify-content: center; font-size: 18px; flex-shrink: 0;
+  .contact-box {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 40px 36px; box-shadow: var(--shadow); text-align: left; margin-top: 36px;
   }
-  .contact-info-text h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
-  .contact-info-text p, .contact-info-text a { font-size: 14px; color: var(--muted); line-height: 1.6; text-decoration: none; }
-  .contact-info-text a:hover { color: var(--blue); }
-  .contact-form { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 40px; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
-  .form-group label { font-size: 13px; font-weight: 600; color: var(--text); }
-  .form-group input, .form-group select, .form-group textarea {
-    padding: 12px 14px;
-    border: 1.5px solid var(--border);
-    border-radius: 8px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px; color: var(--text);
-    background: var(--white);
-    transition: border-color 0.2s;
-    outline: none;
-    width: 100%;
-  }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-    border-color: var(--blue);
-    box-shadow: 0 0 0 3px rgba(0,87,255,0.1);
-  }
-  .form-group textarea { resize: vertical; min-height: 120px; }
-  .btn-submit {
-    width: 100%; background: var(--blue); color: #fff;
-    border: none; padding: 15px; border-radius: 9px;
-    font-family: 'Sora', sans-serif;
-    font-size: 15px; font-weight: 700;
-    cursor: pointer; transition: all 0.2s;
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-  }
-  .btn-submit:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,87,255,0.35); }
+  .contact-box h3 { font-size: 17px; color: var(--navy); margin-bottom: 14px; }
+  .contact-box .feature-list { margin-bottom: 28px; gap: 10px; }
+  .contact-box .feature-list li { font-size: 14px; }
+  .contact-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .contact-email { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .contact-email a { color: var(--blue); text-decoration: none; font-weight: 600; }
 
   /* ── FOOTER ── */
   footer { background: var(--navy); color: rgba(255,255,255,0.55); }
-  .footer-inner {
-    max-width: 1200px; margin: 0 auto;
-    padding: 56px 32px 32px;
-  }
-  .footer-top {
-    display: grid; grid-template-columns: 2fr 1fr 1fr;
-    gap: 48px; padding-bottom: 48px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  .footer-brand { }
-  .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-  .footer-logo img { height: 53px; width: auto; filter: brightness(0) invert(1); }
-  .footer-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px; color: #fff; }
-  .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.6; max-width: 260px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; padding: 56px 32px 32px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .footer-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px; color: #fff; display: block; margin-bottom: 14px; }
+  .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; max-width: 320px; }
   .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.85); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
   .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .footer-col ul li a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .footer-col ul li a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; transition: color 0.2s; }
   .footer-col ul li a:hover { color: #fff; }
-  .footer-bottom {
-    display: flex; justify-content: space-between; align-items: center;
-    padding-top: 28px; font-size: 13px;
-    flex-wrap: wrap; gap: 12px;
-  }
-  .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 13px; flex-wrap: wrap; gap: 12px; }
+  .footer-bottom a { color: rgba(255,255,255,0.45); text-decoration: none; }
   .footer-bottom a:hover { color: #fff; }
 
   /* ── ANIMATIONS ── */
-  .fade-up {
-    opacity: 0; transform: translateY(24px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-  /* ── AI TOKENS SECTION ── */
-  .ai-tokens { background: var(--surface); }
-  .ai-tokens-layout {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 40px; margin-top: 52px; align-items: start;
-  }
-  .ai-model-cards { display: flex; flex-direction: column; gap: 20px; }
-  .ai-model-card {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 28px;
-    box-shadow: var(--shadow);
-  }
-  .ai-model-card--featured {
-    border-color: var(--blue);
-    box-shadow: 0 4px 24px rgba(0,87,255,0.12);
-  }
-  .ai-model-card-top {
-    display: flex; justify-content: space-between;
-    align-items: flex-start; gap: 12px; margin-bottom: 20px;
-  }
-  .ai-model-card-name {
-    font-family: 'Sora', sans-serif;
-    font-size: 18px; font-weight: 800; color: var(--navy); margin-bottom: 4px;
-  }
-  .ai-model-card-sub { font-size: 13px; color: var(--muted); }
-  .ai-model-pricing {
-    display: flex; align-items: center; gap: 0;
-    background: var(--surface); border-radius: 10px;
-    overflow: hidden; margin-bottom: 20px;
-    border: 1px solid var(--border);
-  }
-  .ai-model-price-item {
-    flex: 1; padding: 14px 16px;
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .ai-model-price-divider { width: 1px; background: var(--border); align-self: stretch; }
-  .ai-model-price-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
-  .ai-model-price-val { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 800; color: var(--navy); }
-  .ai-model-price-unit { font-size: 11px; font-weight: 500; color: var(--muted); margin-left: 2px; }
-  .ai-model-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
-  .ai-model-features li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text); }
-
-  .ai-compare-table {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: var(--radius); overflow: hidden;
-    box-shadow: var(--shadow); position: sticky; top: 88px;
-  }
-  .ai-compare-title {
-    font-family: 'Sora', sans-serif;
-    font-size: 14px; font-weight: 700; color: var(--navy);
-    padding: 18px 24px 0;
-  }
-  .ai-compare-note {
-    padding: 14px 24px; font-size: 13px; color: var(--text);
-    background: var(--surface); line-height: 1.7;
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .fade-up { opacity: 1; transform: none; transition: none; }
   }
 
   /* ── HAMBURGER MENU ── */
   .nav-hamburger {
-    display: none;
-    flex-direction: column; justify-content: center; align-items: center;
+    display: none; flex-direction: column; justify-content: center; align-items: center;
     width: 40px; height: 40px; cursor: pointer; gap: 5px;
     background: none; border: none; padding: 4px;
   }
-  .nav-hamburger span {
-    display: block; width: 22px; height: 2px;
-    background: var(--navy); border-radius: 2px;
-    transition: all 0.3s ease;
-    transform-origin: center;
-  }
+  .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s ease; transform-origin: center; }
   .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
   .mobile-menu {
-    display: none;
-    position: fixed; top: 68px; left: 0; right: 0;
-    background: rgba(255,255,255,0.98);
-    backdrop-filter: blur(16px);
+    display: none; position: fixed; top: 68px; left: 0; right: 0;
+    background: rgba(255,255,255,0.98); backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
-    padding: 20px 24px 28px;
-    z-index: 999;
+    padding: 20px 24px 28px; z-index: 999;
     box-shadow: 0 8px 32px rgba(0,40,120,0.12);
     flex-direction: column; gap: 4px;
   }
   .mobile-menu.open { display: flex; }
-  .mobile-menu a {
-    text-decoration: none; color: var(--text);
-    font-size: 16px; font-weight: 500;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    display: block; transition: color 0.2s;
-  }
+  .mobile-menu a { text-decoration: none; color: var(--text); font-size: 16px; font-weight: 500; padding: 12px 0; border-bottom: 1px solid var(--border); display: block; }
   .mobile-menu a:last-child { border-bottom: none; }
   .mobile-menu a:hover { color: var(--blue); }
   .mobile-menu .btn-mobile-cta {
-    margin-top: 12px;
-    background: var(--blue); color: #fff !important;
-    padding: 14px 20px; border-radius: 9px;
-    text-align: center; font-weight: 700;
-    font-family: 'Sora', sans-serif;
-    border-bottom: none !important;
+    margin-top: 12px; background: var(--blue); color: #fff !important;
+    padding: 14px 20px; border-radius: 9px; text-align: center; font-weight: 700;
+    font-family: 'Sora', sans-serif; border-bottom: none !important;
   }
 
-  /* ── TABLET (≤960px) ── */
-  @media (max-width: 960px) {
-    .hero-two-col { grid-template-columns: 1fr; gap: 40px; }
-    .hero-stats { grid-template-columns: repeat(2, 1fr); }
-    .licensing-layout { grid-template-columns: 1fr; gap: 40px; }
-    .about-layout { grid-template-columns: 1fr; gap: 36px; }
-    .contact-layout { grid-template-columns: 1fr; gap: 40px; }
-    .cards-grid { grid-template-columns: repeat(2, 1fr); }
-    .ai-tokens-layout { grid-template-columns: 1fr; }
-    .ai-compare-table { position: static; }
-    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
-    .form-row { grid-template-columns: 1fr; }
-  }
-
-  /* ── MOBILE (≤680px) ── */
-  @media (max-width: 680px) {
-    /* Nav */
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
+    .hero-two-col { grid-template-columns: 1fr; gap: 44px; }
+    .outcomes { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr; gap: 40px; }
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 680px) {
     .nav-inner { padding: 0 20px; }
-
-    /* Sections */
     section { padding: 64px 20px; }
     .hero { padding: 110px 20px 64px; }
-
-    /* Hero */
-    .hero-two-col { grid-template-columns: 1fr; gap: 36px; margin-bottom: 36px; }
-    .hero h1 { font-size: 32px; letter-spacing: -1px; }
-    .hero p { font-size: 16px; }
-    .hero-ctas { flex-direction: column; }
-    .btn-primary, .btn-secondary { width: 100%; justify-content: center; text-align: center; }
-    .hero-stats { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
-    .stat { padding: 18px 16px; }
-    .stat-num { font-size: 24px; }
-    .platforms { margin-top: 40px; padding-top: 36px; max-width: 100%; }
-    .platform-badges { gap: 8px; }
-    .platform-badge { padding: 7px 12px; font-size: 12px; }
-
-    /* AI card in hero */
-    .ai-table-head, .ai-table-row { padding: 10px 16px; }
-
-    /* Section headings */
+    .hero h1 { font-size: 30px; letter-spacing: -0.8px; }
+    .hero-sub { font-size: 16px; }
+    .hero-ctas { flex-direction: column; margin-bottom: 40px; }
+    .hero-ctas a, .contact-actions a, .section-cta a { width: 100%; }
+    .outcome { padding: 18px 16px; }
+    .outcome-word { font-size: 17px; }
+    .step { padding: 12px 18px; }
     .section-title { font-size: 26px; }
     .section-sub { font-size: 15px; }
-
-    /* Cards — single column */
+    .two-col { gap: 32px; margin-top: 36px; }
     .cards-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 36px; }
     .card { padding: 24px; }
-
-    /* Licensing */
+    .notes-row { grid-template-columns: 1fr; gap: 16px; }
     .feature-list li { font-size: 14px; }
-    .licensing-layout { gap: 32px; margin-top: 40px; }
-
-    /* Pricing table */
-    .pricing-card-header,
-    .pricing-row { padding: 14px 18px; }
-
-    /* AI tokens */
-    .ai-tokens-layout { grid-template-columns: 1fr; gap: 24px; }
-    .ai-model-card { padding: 22px; }
-    .ai-model-price-val { font-size: 17px; }
-
-    /* About */
-    .about-card { padding: 28px; }
-    .about-layout { gap: 32px; margin-top: 40px; }
-
-    /* Contact */
-    .contact-layout { gap: 36px; margin-top: 40px; }
-    .contact-form { padding: 24px 20px; }
-    .form-row { grid-template-columns: 1fr; gap: 0; }
-
-    /* Footer */
+    .side-card-header, .side-card-list li { padding: 14px 18px; }
+    .dark-card { padding: 28px; }
+    .compare th, .compare td { padding: 12px 14px; }
+    .contact-box { padding: 28px 20px; }
     .footer-top { grid-template-columns: 1fr; gap: 32px; }
     .footer-inner { padding: 44px 20px 24px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .footer-tagline { max-width: 100%; }
   }
-
-  /* ── SMALL MOBILE (≤380px) ── */
   @media (max-width: 380px) {
-    .hero h1 { font-size: 28px; }
-    .hero-stats { grid-template-columns: 1fr 1fr; }
-    .stat-num { font-size: 20px; }
+    .hero h1 { font-size: 27px; }
+    .outcomes { grid-template-columns: 1fr 1fr; }
     .hero-badge { font-size: 11px; padding: 5px 11px; }
   }
 </style>
@@ -636,17 +410,17 @@
 <!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <img src="assets/harbourcloud-logo.png" alt="Harbour Cloud" onerror="this.style.display='none'">
+    <a href="#home" class="nav-logo">
+      <img src="assets/harbourcloud-logo.png" alt="Harbour Cloud logo" width="66" height="66" onerror="this.style.display='none'">
       <span class="nav-logo-text">Harbour Cloud</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#licensing">Microsoft Licensing</a></li>
-      <li><a href="#architecture">Cloud Architecture</a></li>
-      <li><a href="#ai-tokens">AI Tokens</a></li>
-      <li><a href="#security">Security</a></li>
+      <li><a href="#azure-ai">Azure AI</a></li>
+      <li><a href="#ai-agents">AI agents</a></li>
+      <li><a href="#private-ai">Private AI</a></li>
+      <li><a href="#managed">Cloud &amp; licensing</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#contact" class="btn-nav">Get a Free Audit</a></li>
+      <li><a href="#contact" class="btn-nav">Talk to an expert</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -656,18 +430,19 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#licensing" onclick="closeMobileMenu()">Microsoft Licensing</a>
-  <a href="#architecture" onclick="closeMobileMenu()">Cloud Architecture</a>
-  <a href="#ai-tokens" onclick="closeMobileMenu()">AI Tokens</a>
-  <a href="#security" onclick="closeMobileMenu()">Security</a>
+  <a href="#azure-ai" onclick="closeMobileMenu()">Azure AI</a>
+  <a href="#ai-agents" onclick="closeMobileMenu()">AI agents</a>
+  <a href="#private-ai" onclick="closeMobileMenu()">Private AI</a>
+  <a href="#managed" onclick="closeMobileMenu()">Cloud &amp; licensing</a>
+  <a href="#why-csp" onclick="closeMobileMenu()">Why a CSP partner</a>
   <a href="#about" onclick="closeMobileMenu()">About</a>
-  <a href="#contact" class="btn-mobile-cta" onclick="closeMobileMenu()">Get a Free Audit →</a>
+  <a href="#contact" class="btn-mobile-cta" onclick="closeMobileMenu()">Talk to an expert →</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-grid">
-    <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <style>
           .geo { fill: none; stroke-width: 1.2; opacity: 0; animation: floatIn 1.2s ease forwards; }
@@ -676,375 +451,282 @@
           @keyframes drift1 { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-14px) rotate(3deg); } }
           @keyframes drift2 { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-10px) rotate(-4deg); } }
           @keyframes drift3 { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-18px) rotate(2deg); } }
-          @keyframes drift4 { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
           .d1 { animation: floatIn 1s ease forwards, drift1 7s ease-in-out 1s infinite; }
           .d2 { animation: floatIn 1s ease forwards, drift2 9s ease-in-out 1.2s infinite; }
           .d3 { animation: floatIn 1s ease forwards, drift3 11s ease-in-out 0.8s infinite; }
-          .d4 { animation: floatIn 1s ease forwards, drift4 8s ease-in-out 1.5s infinite; }
-          .d5 { animation: floatIn 1s ease forwards, drift2 12s ease-in-out 0.5s infinite; }
-          .d6 { animation: floatIn 1s ease forwards, drift1 10s ease-in-out 2s infinite; }
         </style>
       </defs>
-
-      <!-- Large hollow circle top-right -->
-      <circle class="geo d1" cx="1180" cy="120" r="180" stroke="rgba(0,87,255,0.07)" animation-delay="0s"/>
-      <!-- Medium hollow circle, mid-right -->
-      <circle class="geo d2" cx="1320" cy="380" r="100" stroke="rgba(0,87,255,0.05)" style="animation-delay:0.2s"/>
-      <!-- Small filled circle -->
-      <circle class="geo-fill d4" cx="1050" cy="260" r="6" fill="rgba(0,87,255,0.18)" style="animation-delay:0.4s"/>
-      <circle class="geo-fill d5" cx="980" cy="80" r="4" fill="rgba(0,87,255,0.12)" style="animation-delay:0.3s"/>
-      <circle class="geo-fill d3" cx="1260" cy="500" r="5" fill="rgba(61,123,255,0.14)" style="animation-delay:0.6s"/>
-
-      <!-- Hollow square rotated 45deg (diamond), top-left area -->
-      <rect class="geo d3" x="60" y="80" width="90" height="90" rx="6"
-        stroke="rgba(0,87,255,0.06)" transform="rotate(20 105 125)" style="animation-delay:0.1s"/>
-
-      <!-- Smaller rotated square -->
-      <rect class="geo d5" x="200" y="520" width="55" height="55" rx="4"
-        stroke="rgba(0,87,255,0.07)" transform="rotate(-15 227 547)" style="animation-delay:0.5s"/>
-
-      <!-- Triangle (polygon) top-right cluster -->
-      <polygon class="geo d2" points="1100,40 1140,110 1060,110"
-        stroke="rgba(0,87,255,0.06)" style="animation-delay:0.3s"/>
-
-      <!-- Thin long horizontal line, decorative -->
-      <line class="geo d6" x1="900" y1="600" x2="1100" y2="600"
-        stroke="rgba(0,87,255,0.06)" stroke-width="1" style="animation-delay:0.7s"/>
-
-      <!-- Hexagon outline, mid-left -->
-      <polygon class="geo d1"
-        points="110,320 145,300 180,320 180,360 145,380 110,360"
-        stroke="rgba(0,87,255,0.06)" style="animation-delay:0.2s"/>
-
-      <!-- Small dot cluster -->
-      <circle class="geo-fill d4" cx="320" cy="160" r="3.5" fill="rgba(0,87,255,0.10)" style="animation-delay:0.8s"/>
-      <circle class="geo-fill d5" cx="340" cy="175" r="2.5" fill="rgba(0,87,255,0.08)" style="animation-delay:0.9s"/>
-      <circle class="geo-fill d3" cx="305" cy="178" r="2" fill="rgba(0,87,255,0.07)" style="animation-delay:1s"/>
-
-      <!-- Large subtle arc, bottom-left -->
-      <path class="geo d6" d="M -60 650 Q 200 400 460 580"
-        stroke="rgba(0,87,255,0.05)" stroke-width="1.5" style="animation-delay:0.4s"/>
-
-      <!-- Rotated rect, far right -->
-      <rect class="geo d2" x="1350" y="200" width="70" height="70" rx="5"
-        stroke="rgba(61,123,255,0.05)" transform="rotate(30 1385 235)" style="animation-delay:0.6s"/>
+      <circle class="geo d1" cx="1180" cy="120" r="180" stroke="rgba(0,87,255,0.07)"/>
+      <circle class="geo d2" cx="1320" cy="380" r="100" stroke="rgba(0,87,255,0.05)"/>
+      <circle class="geo-fill d3" cx="1050" cy="260" r="6" fill="rgba(0,87,255,0.18)"/>
+      <rect class="geo d3" x="60" y="80" width="90" height="90" rx="6" stroke="rgba(0,87,255,0.06)" transform="rotate(20 105 125)"/>
+      <polygon class="geo d2" points="1100,40 1140,110 1060,110" stroke="rgba(0,87,255,0.06)"/>
+      <polygon class="geo d1" points="110,320 145,300 180,320 180,360 145,380 110,360" stroke="rgba(0,87,255,0.06)"/>
+      <path class="geo d2" d="M -60 650 Q 200 400 460 580" stroke="rgba(0,87,255,0.05)" stroke-width="1.5"/>
     </svg>
   </div>
   <div class="hero-inner">
     <div class="hero-two-col">
-      <!-- LEFT: text + stats -->
-      <div class="hero-left">
-        <div class="hero-badge">Sydney-Based Enterprise Cloud Services</div>
-        <h1>Cloud, Licensing &<br><span>AI Token</span><br>Specialists</h1>
-        <p>Helping Australian businesses reduce Microsoft 365 costs, deploy secure cloud infrastructure, and access premium AI models at wholesale rates.</p>
+      <div>
+        <div class="hero-badge">Azure, Microsoft 365 and AWS, with an AI focus</div>
+        <h1>AI projects, designed, built and run on <span>Azure and AWS.</span></h1>
+        <p class="hero-sub">AI can accelerate almost any business. If you have pain points, we are all ears. Tell us where the work piles up, and we will work out what AI can take on, build it in your own cloud accounts, and keep it running. We are a small team that moves fast and gets things done at a reasonable price.</p>
         <div class="hero-ctas">
-          <a href="#licensing" class="btn-primary">Request Free Audit →</a>
-          <a href="#ai-tokens" class="btn-secondary">View AI Pricing</a>
+          <a href="#contact" class="btn-primary">Talk to an expert →</a>
+          <a href="#azure-ai" class="btn-secondary">See how we build</a>
         </div>
-        <div class="hero-stats fade-up">
-          <div class="stat">
-            <div class="stat-num"><span>10%</span></div>
-            <div class="stat-label">Microsoft 365<br>License Savings</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">Zero</div>
-            <div class="stat-label">Downtime During<br>Migration</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num"><span>100%</span></div>
-            <div class="stat-label">Australian-Based<br>Support Team</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">84%</div>
-            <div class="stat-label">AI Token Cost<br>Reduction vs Claude</div>
-          </div>
+        <div class="outcomes fade-up">
+          <div class="outcome"><div class="outcome-word">Listen</div><div class="outcome-label">Your pain points, mapped to what AI can do</div></div>
+          <div class="outcome"><div class="outcome-word">Build</div><div class="outcome-label">On Azure or AWS, in your own accounts</div></div>
+          <div class="outcome"><div class="outcome-word">Run</div><div class="outcome-label">Monitored, supported, governed</div></div>
+          <div class="outcome"><div class="outcome-word">Private</div><div class="outcome-label">On-premises option for sensitive data</div></div>
         </div>
       </div>
 
-      <!-- RIGHT: AI model comparison card -->
-      <div class="hero-right fade-up">
-        <div class="ai-card">
-          <div class="ai-card-header">
-            <div>
-              <div class="ai-card-label">AI Model Comparison</div>
-              <div class="ai-card-title">Powerful AI. Transparent Pricing.</div>
-            </div>
+      <div class="fade-up">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="eyebrow">How an AI project runs</div>
+            <div class="hero-card-title">From use case to production</div>
           </div>
-          <div class="ai-table">
-            <div class="ai-table-head">
-              <span>Model</span>
-              <span>Input</span>
-              <span>Output</span>
-            </div>
-            <div class="ai-table-row">
-              <div class="ai-model-name">
-                <span class="ai-model-label">Claude Sonnet 4.6</span>
-                <span class="ai-model-sub">Anthropic</span>
-              </div>
-              <span class="ai-price">$3.00</span>
-              <span class="ai-price">$15.00</span>
-            </div>
-            <div class="ai-table-row">
-              <div class="ai-model-name">
-                <span class="ai-model-label">Gemini 3.1 Pro</span>
-                <span class="ai-model-sub">Google</span>
-              </div>
-              <span class="ai-price">$2.00</span>
-              <span class="ai-price">$12.00</span>
-            </div>
-            <div class="ai-table-row ai-row-highlight">
-              <div class="ai-model-name">
-                <span class="ai-model-label">Qwen3-Max</span>
-                <span class="ai-pill">Flagship</span>
-              </div>
-              <span class="ai-price ai-price-good">$1.20</span>
-              <span class="ai-price ai-price-good">$6.00</span>
-            </div>
-            <div class="ai-table-row ai-row-best">
-              <div class="ai-model-name">
-                <span class="ai-model-label">Qwen3.5-Plus</span>
-                <span class="ai-pill ai-pill-best">Best Value</span>
-              </div>
-              <span class="ai-price ai-price-best">$0.40</span>
-              <span class="ai-price ai-price-best">$2.40</span>
-            </div>
-          </div>
-          <div class="ai-card-footer">
-            <div class="ai-saving-badge">~84% lower cost vs Claude Sonnet 4.6</div>
-            <div class="ai-card-note">Pricing in USD per 1M tokens. Annual commitment.</div>
+          <ol class="steps">
+            <li class="step"><span class="step-num">01</span><span><span class="step-title">Listen</span><span class="step-sub">Your pain points and where the work piles up, in your words</span></span></li>
+            <li class="step"><span class="step-num">02</span><span><span class="step-title">Prove</span><span class="step-sub">A working proof of concept on your own data</span></span></li>
+            <li class="step"><span class="step-num">03</span><span><span class="step-title">Build</span><span class="step-sub">Production build with identity, security and monitoring</span></span></li>
+            <li class="step"><span class="step-num">04</span><span><span class="step-title">Run</span><span class="step-sub">Operated, tuned and governed after go-live</span></span></li>
+          </ol>
+          <div class="hero-card-footer">
+            <strong>Fast to start, efficient to run</strong>
+            <span>Cost-effective by design, in your own Azure or AWS accounts.</span>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="platforms fade-up">
-      <p>Platforms We Work With</p>
-      <div class="platform-badges">
-        <span class="platform-badge"><span class="platform-icon">🪟</span> Microsoft</span>
-        <span class="platform-badge"><span class="platform-icon">☁️</span> AWS</span>
-        <span class="platform-badge"><span class="platform-icon">🌐</span> Alibaba Cloud</span>
-        <span class="platform-badge"><span class="platform-icon">🤖</span> Qwen AI</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LICENSING -->
-<section class="licensing" id="licensing">
+<!-- AZURE AI -->
+<section class="bg-surface" id="azure-ai">
   <div class="section-inner">
-    <div class="section-label">Licensing</div>
-    <h2 class="section-title">Microsoft 365 Cost Reduction</h2>
-    <p class="section-sub">Transfer your Microsoft 365 billing to Harbour Cloud and immediately reduce your operational expenditure — guaranteed.</p>
-    <div class="licensing-layout fade-up">
+    <div class="section-label">Azure AI projects</div>
+    <h2 class="section-title">Azure AI development, from use case to production</h2>
+    <p class="section-sub">Start with your problem, not the technology. We design, build and operate AI workloads on Azure OpenAI and Azure AI Foundry, deployed into your own Azure subscription with Entra ID, network controls and monitoring. Cost governance is part of the build, so spend stays predictable and the architecture stays cost-effective.</p>
+    <div class="cards-grid fade-up">
+      <div class="card card--featured">
+        <div class="card-icon" aria-hidden="true">🔍</div>
+        <h3>Discovery and proof of concept</h3>
+        <p>Tell us where the friction is and we will map it to what AI can realistically do, then prove the most promising idea on your own data before anyone commits to a production build.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🏗️</div>
+        <h3>Production build on Azure</h3>
+        <p>Assistants, agents and retrieval over your documents, built on Azure OpenAI and Azure AI Foundry, with your data staying inside your tenancy.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">📈</div>
+        <h3>Run, govern and control cost</h3>
+        <p>Monitoring, evaluation and Azure cost management after go-live: budgets, alerts and right-sized resources, so the Azure invoice matches the plan.</p>
+      </div>
+    </div>
+    <div class="notes-row fade-up">
+      <div class="note"><strong>Building on AWS too.</strong> The same delivery on AWS, built in your own accounts and operated by us. Existing Alibaba Cloud workloads are supported as well.</div>
+      <div class="note"><strong>Your tenancy, your data.</strong> Everything is built in subscriptions you own, so the models, prompts and data never leave your control.</div>
+    </div>
+  </div>
+</section>
+
+<!-- AI AGENTS -->
+<section id="ai-agents">
+  <div class="section-inner">
+    <div class="section-label">AI agents and automation</div>
+    <h2 class="section-title">AI agents and automation on your own data</h2>
+    <p class="section-sub">Most useful AI work is not a chatbot. It is an agent that reads, checks and acts on the documents and systems your firm already runs on, with a person in the loop where it matters.</p>
+    <div class="cards-grid fade-up">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🤖</div>
+        <h3>Agents for internal workflows</h3>
+        <p>Agentic workflows that pick up routine work across your systems: triage, lookups, drafting and follow-ups, with every action logged.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">📄</div>
+        <h3>Document processing</h3>
+        <p>Document automation for the paperwork that eats your week: extraction, classification, checks against your rules, and handover to whoever signs it off.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">💬</div>
+        <h3>Assistants grounded in your data</h3>
+        <p>Retrieval over your own content so answers cite the source document, with permissions respected so people only see what they should.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE AI -->
+<section class="dark" id="private-ai">
+  <div class="section-inner">
+    <div class="section-label">Private AI</div>
+    <h2 class="section-title">Private and on-premises AI for regulated data</h2>
+    <p class="section-sub">When data cannot leave your premises, the AI comes to the data. We design and run local inference clusters on open-source models, then build the same agentic workloads on top.</p>
+    <div class="cards-grid fade-up">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🖥️</div>
+        <h3>Cluster design and sizing</h3>
+        <p>Hardware sizing, deployment and operations for self-hosted inference, matched to the workloads you actually plan to run.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🧠</div>
+        <h3>Open-source models, tuned</h3>
+        <p>Local LLMs selected and tuned for your tasks, evaluated against the same measures we would use for a cloud build.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🔒</div>
+        <h3>Data stays on your network</h3>
+        <p>Suited to sensitive and regulated information, client confidentiality obligations and anything that cannot be sent to a public service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- READINESS AND COPILOT -->
+<section class="bg-surface" id="copilot">
+  <div class="section-inner">
+    <div class="section-label">Readiness and governance</div>
+    <h2 class="section-title">AI readiness, governance and Microsoft 365 Copilot</h2>
+    <p class="section-sub">Before AI touches your business data, the permissions and governance underneath it have to be right. This is where most stalled projects come unstuck.</p>
+    <div class="two-col fade-up">
       <div>
         <ul class="feature-list">
-          <li><span class="check">✓</span><span><strong>10% discount on annual commitments</strong> — immediate savings on your existing plan</span></li>
-          <li><span class="check">✓</span><span><strong>Zero tenant migration required</strong> — no disruption to your data or users</span></li>
-          <li><span class="check">✓</span><span><strong>No service interruption or downtime</strong> — seamless billing transfer only</span></li>
-          <li><span class="check">✓</span><span><strong>Same Microsoft infrastructure</strong> — identical performance and support</span></li>
-          <li><span class="check">✓</span><span><strong>Free license audit included</strong> — identify over-provisioned seats and waste</span></li>
+          <li><span class="check">✓</span><span><strong>AI readiness review.</strong> Where your data sits, who can reach it, and which use cases are safe to start with.</span></li>
+          <li><span class="check">✓</span><span><strong>Data governance.</strong> Permissions, sensitivity labels and retention sorted with Microsoft Purview before rollout.</span></li>
+          <li><span class="check">✓</span><span><strong>Microsoft 365 Copilot readiness.</strong> Licensing and oversharing fixed first, so Copilot surfaces the right information to the right people.</span></li>
+          <li><span class="check">✓</span><span><strong>Usage and adoption.</strong> Measuring what people actually use, and retiring what they do not.</span></li>
         </ul>
-        <a href="#contact" class="btn-primary" style="margin-top:8px; display:inline-flex;">Request a License Audit →</a>
+        <a href="#contact" class="btn-primary">Talk to an expert →</a>
       </div>
-      <div>
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <span>Plan</span>
-            <span class="col-hc">Your Saving</span>
-          </div>
-          <div class="pricing-row">
-            <span class="plan-name">Microsoft 365 Business Basic</span>
-            <span class="savings-badge">−10%</span>
-          </div>
-          <div class="pricing-row">
-            <span class="plan-name">Microsoft 365 Business Standard</span>
-            <span class="savings-badge">−10%</span>
-          </div>
-          <div class="pricing-row">
-            <span class="plan-name">Microsoft 365 Business Premium</span>
-            <span class="savings-badge">−10%</span>
-          </div>
-          <div class="pricing-row">
-            <span class="plan-name">Office 365 E3 / E5</span>
-            <span class="savings-badge">−10%</span>
-          </div>
-          <div class="pricing-row">
-            <span class="plan-name">Microsoft 365 Copilot</span>
-            <span class="savings-badge">−10%</span>
-          </div>
-          <div class="pricing-note">💡 10% savings apply to annual subscription plans only, based on Microsoft's current list price at time of billing.</div>
-        </div>
+      <div class="side-card">
+        <div class="side-card-header">Where AI projects usually stall</div>
+        <ul class="side-card-list">
+          <li><span class="check">✓</span>A demo that impresses, with no route to production</li>
+          <li><span class="check">✓</span>Files shared far wider than anyone realised</li>
+          <li><span class="check">✓</span>No measure of whether answers are right</li>
+          <li><span class="check">✓</span>Costs that arrive as a surprise on the invoice</li>
+          <li><span class="check">✓</span>Nobody named to run it after launch</li>
+        </ul>
+        <div class="side-card-note">We work through these in the discovery stage, before the build starts.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CLOUD ARCHITECTURE -->
-<section class="arch" id="architecture">
+<!-- MANAGED MICROSOFT 365 (SUPPORTING) -->
+<section id="managed">
   <div class="section-inner">
-    <div class="section-label">Solutions</div>
-    <h2 class="section-title">Cloud Architecture & Migration</h2>
-    <p class="section-sub">Design, deploy, and optimise enterprise infrastructure across AWS, Azure, and Alibaba Cloud — built to scale with your business.</p>
+    <div class="section-label">Cloud and licensing</div>
+    <h2 class="section-title">Azure, Microsoft 365 licensing and AWS, managed</h2>
+    <p class="section-sub">We are a reseller and managed service provider: we supply Azure, Microsoft 365 licences and AWS, and run them day to day. A small, senior team that moves fast, keeps environments tidy and keeps cloud spend cost-effective.</p>
+    <div class="cards-grid fade-up">
+      <div class="card card--featured">
+        <div class="card-icon" aria-hidden="true">☁️</div>
+        <h3>AWS accounts and billing</h3>
+        <p>We take over existing AWS accounts without downtime or rebuilding anything, consolidate billing under AWS Organizations, and give you one Australian invoice and one team to call. Account structure, landing zone and guardrails tidied as we go.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">📉</div>
+        <h3>AWS cost optimisation</h3>
+        <p>Right-sized instances, storage lifecycle, commitment planning and a Well-Architected review, so your AWS spend goes further without trading away reliability.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🪟</div>
+        <h3>Microsoft 365 and Azure licensing</h3>
+        <p>Business Premium, E3 or E5 supplied and right-sized as a Microsoft Cloud Solution Provider, with renewals reviewed before they roll over and seat changes handled the same day.</p>
+      </div>
+    </div>
     <div class="cards-grid fade-up">
       <div class="card">
-        <div class="card-icon">🏗️</div>
-        <h3>Enterprise Infrastructure Design</h3>
-        <p>Design and deployment of resilient, high-availability infrastructure across AWS, Azure, and Alibaba Cloud. We build foundations that scale with your business while maintaining strict security boundaries.</p>
+        <div class="card-icon" aria-hidden="true">✅</div>
+        <h3>Correct from day one</h3>
+        <p>Your tenant configured to Microsoft's security baseline, identities and devices under control, and licences matched to what people actually use. Business Premium, E3 or E5, right-sized and reviewed before renewal.</p>
       </div>
       <div class="card">
-        <div class="card-icon">🚀</div>
-        <h3>Cloud Migration</h3>
-        <p>Seamless migration from on-premise or legacy hosting environments to modern cloud platforms with minimal disruption to your operations and zero data loss.</p>
+        <div class="card-icon" aria-hidden="true">🛡️</div>
+        <h3>Security you already paid for, switched on</h3>
+        <p>Microsoft Defender, Intune, Entra ID and Purview are already in your licences. We turn them on and tune them: MFA everywhere, conditional access, device compliance and Essential Eight alignment, so you stay audit-ready when auditors, cyber insurers and clients ask.</p>
       </div>
       <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>Cost Optimisation</h3>
-        <p>Continuous analysis and architecture improvements to reduce unnecessary cloud spending and maximise your return on infrastructure investment through right-sizing and reserved capacity planning.</p>
+        <div class="card-icon" aria-hidden="true">🤝</div>
+        <h3>Accountable service, not a ticket queue</h3>
+        <p>New starters, leavers, licence changes, renewals and questions handled the same day by people who already know your setup. A managed service, not a helpdesk queue.</p>
       </div>
+    </div>
+    <div class="section-cta">
+      <a href="mailto:oliver@harbourcloud.com.au?subject=Security%20review%20request&amp;body=Name%3A%20%0ACompany%3A%20%0AStaff%20count%3A%20%0ACurrent%20Microsoft%20setup%3A%20%0AWhat%27s%20driving%20the%20review%20(audit%2C%20cyber%20insurance%2C%20client%20due%20diligence)%3A%20" class="btn-secondary">Request a security review</a>
     </div>
   </div>
 </section>
 
-<!-- SECURITY -->
-<section class="security" id="security">
+<!-- WHY A CSP PARTNER -->
+<section class="bg-surface" id="why-csp">
   <div class="section-inner">
-    <div class="section-label">Security</div>
-    <h2 class="section-title">Enterprise-Grade Protection</h2>
-    <p class="section-sub">Comprehensive security architecture to protect your applications, workforce, and data against modern threats.</p>
-    <div class="cards-grid fade-up">
-      <div class="card">
-        <div class="card-icon">🛡️</div>
-        <h3>Edge Security & WAF</h3>
-        <p>Implementation of enterprise-grade Web Application Firewalls, DDoS protection, and edge performance optimisation — managed and monitored by our team.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔐</div>
-        <h3>Zero Trust Access</h3>
-        <p>Modernise your remote workforce security with Zero Trust network architecture, replacing vulnerable legacy VPNs with identity-based access controls.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">✅</div>
-        <h3>Compliance & Audit Readiness</h3>
-        <p>Implementation of Essential Eight controls, identity management, and proactive threat defence to ensure ongoing audit readiness and regulatory compliance.</p>
-      </div>
+    <div class="section-label">Why a CSP partner</div>
+    <h2 class="section-title">Why buy your cloud through a Microsoft CSP partner and AWS reseller?</h2>
+    <p class="section-sub">Microsoft sells its subscriptions directly and through Cloud Solution Provider (CSP) partners. AWS sells directly and through resellers. Buying through Harbour Cloud puts one Australian team between you and both platforms: licences supplied, accounts and environments managed, projects delivered.</p>
+    <div class="compare-wrap fade-up">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"></th><th scope="col">Buying direct</th><th scope="col" class="hc">Through Harbour Cloud</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">AI and cloud projects</th><td>Your team, or a separate consultant</td><td class="hc">Designed, built and run by us</td></tr>
+          <tr><th scope="row">AWS accounts and billing</th><td>Separate accounts, separate invoices</td><td class="hc">Consolidated, with one Australian invoice</td></tr>
+          <tr><th scope="row">Who runs your tenant and accounts</th><td>You do</td><td class="hc">Harbour Cloud, as a managed service</td></tr>
+          <tr><th scope="row">Security baseline</th><td>Up to you</td><td class="hc">Applied and kept tuned</td></tr>
+          <tr><th scope="row">Starters, leavers and licence changes</th><td>Self-service portal</td><td class="hc">Handled the same day</td></tr>
+          <tr><th scope="row">Renewals and cloud spend</th><td>Up to you to track</td><td class="hc">Reviewed, right-sized and kept cost-effective</td></tr>
+        </tbody>
+      </table>
     </div>
+    <p class="compare-note">Moving across is an administrative change, not a rebuild. Taking over AWS accounts moves billing and management while your workloads stay exactly where they are, and Microsoft 365 needs no tenant migration.</p>
   </div>
 </section>
 
-<!-- AI TOKENS -->
-<section class="ai-tokens" id="ai-tokens">
+<!-- WHO WE WORK WITH -->
+<section id="who">
   <div class="section-inner">
-    <div class="section-label">AI Tokens</div>
-    <h2 class="section-title">Premium AI at Wholesale Rates</h2>
-    <p class="section-sub">Stop overpaying for AI intelligence. Access Qwen3-Max and Qwen3.5-Plus — top-tier models at a fraction of the cost of Western alternatives.</p>
-
-    <div class="ai-tokens-layout fade-up">
-      <!-- Model cards -->
-      <div class="ai-model-cards">
-        <div class="ai-model-card ai-model-card--featured">
-          <div class="ai-model-card-top">
-            <div>
-              <div class="ai-model-card-name">Qwen3.5-Plus</div>
-              <div class="ai-model-card-sub">Best value for agentic workflows & automation</div>
-            </div>
-            <span class="ai-pill ai-pill-best" style="font-size:11px;padding:4px 10px;">Best Value</span>
-          </div>
-          <div class="ai-model-pricing">
-            <div class="ai-model-price-item">
-              <span class="ai-model-price-label">Input</span>
-              <span class="ai-model-price-val">$0.40<span class="ai-model-price-unit">/1M tokens</span></span>
-            </div>
-            <div class="ai-model-price-divider"></div>
-            <div class="ai-model-price-item">
-              <span class="ai-model-price-label">Output</span>
-              <span class="ai-model-price-val">$2.40<span class="ai-model-price-unit">/1M tokens</span></span>
-            </div>
-          </div>
-          <ul class="ai-model-features">
-            <li><span class="check" style="background:rgba(0,87,255,0.12)">✓</span>Ideal for high-volume agentic tasks</li>
-            <li><span class="check" style="background:rgba(0,87,255,0.12)">✓</span>~84% cheaper than Claude Sonnet 4.6</li>
-            <li><span class="check" style="background:rgba(0,87,255,0.12)">✓</span>Strong reasoning & instruction following</li>
-          </ul>
-          <a href="#contact" class="btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Get Access →</a>
-        </div>
-
-        <div class="ai-model-card">
-          <div class="ai-model-card-top">
-            <div>
-              <div class="ai-model-card-name">Qwen3-Max</div>
-              <div class="ai-model-card-sub">Flagship model for complex reasoning, coding, and mathematical logic</div>
-            </div>
-            <span class="ai-pill" style="font-size:11px;padding:4px 10px;">Flagship</span>
-          </div>
-          <div class="ai-model-pricing">
-            <div class="ai-model-price-item">
-              <span class="ai-model-price-label">Input</span>
-              <span class="ai-model-price-val">$1.20<span class="ai-model-price-unit">/1M tokens</span></span>
-            </div>
-            <div class="ai-model-price-divider"></div>
-            <div class="ai-model-price-item">
-              <span class="ai-model-price-label">Output</span>
-              <span class="ai-model-price-val">$6.00<span class="ai-model-price-unit">/1M tokens</span></span>
-            </div>
-          </div>
-          <ul class="ai-model-features">
-            <li><span class="check" style="background:var(--blue-pale)">✓</span>Advanced reasoning for complex, multi-step tasks</li>
-            <li><span class="check" style="background:var(--blue-pale)">✓</span>50% cheaper than Gemini 3.1 Pro on output</li>
-            <li><span class="check" style="background:var(--blue-pale)">✓</span>Broad multilingual support across 30+ languages</li>
-          </ul>
-          <a href="#contact" class="btn-secondary" style="width:100%;text-align:center;margin-top:8px;display:block;">Get Access →</a>
-        </div>
-      </div>
-
-      <!-- Comparison table -->
-      <div class="ai-compare-table">
-        <div class="ai-compare-title">How It Compares</div>
-        <div class="ai-table">
-          <div class="ai-table-head" style="grid-template-columns:1fr 80px 80px;">
-            <span>Model</span><span>Input</span><span>Output</span>
-          </div>
-          <div class="ai-table-row" style="grid-template-columns:1fr 80px 80px;">
-            <div class="ai-model-name"><span class="ai-model-label">Claude Sonnet 4.6</span><span class="ai-model-sub">Anthropic</span></div>
-            <span class="ai-price">$3.00</span><span class="ai-price">$15.00</span>
-          </div>
-          <div class="ai-table-row" style="grid-template-columns:1fr 80px 80px;">
-            <div class="ai-model-name"><span class="ai-model-label">Gemini 3.1 Pro</span><span class="ai-model-sub">Google</span></div>
-            <span class="ai-price">$2.00</span><span class="ai-price">$12.00</span>
-          </div>
-          <div class="ai-table-row ai-row-highlight" style="grid-template-columns:1fr 80px 80px;">
-            <div class="ai-model-name"><span class="ai-model-label">Qwen3-Max</span><span class="ai-pill">Flagship</span></div>
-            <span class="ai-price ai-price-good">$1.20</span><span class="ai-price ai-price-good">$6.00</span>
-          </div>
-          <div class="ai-table-row ai-row-best" style="grid-template-columns:1fr 80px 80px;border-bottom:none;">
-            <div class="ai-model-name"><span class="ai-model-label">Qwen3.5-Plus</span><span class="ai-pill ai-pill-best">Best Value</span></div>
-            <span class="ai-price ai-price-best">$0.40</span><span class="ai-price ai-price-best">$2.40</span>
-          </div>
-        </div>
-        <div class="ai-compare-note">Pricing in USD per 1M tokens. Annual commitment required.<br>Contact us for volume discounts and AUD invoicing.</div>
-      </div>
+    <div class="section-label">Who we work with</div>
+    <h2 class="section-title">AI for financial services and regulated firms</h2>
+    <p class="section-sub">Australian firms that run on Microsoft 365, hold sensitive client information, and want AI adopted carefully rather than loudly. Many work in regulated, security-conscious sectors where an AI mistake is a compliance problem, not just an embarrassment.</p>
+    <div class="chips fade-up">
+      <span class="chip">Financial services</span>
+      <span class="chip">Trading and brokerage</span>
+      <span class="chip">Fintech</span>
+      <span class="chip">Professional services</span>
+      <span class="chip">Other regulated sectors</span>
     </div>
+    <p class="fit-note">Not sure where AI fits, or whether it fits at all? That is a normal place to start. Tell us what slows your people down, and we will tell you honestly what is worth building and what is not.</p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about" id="about">
+<section class="bg-surface" id="about">
   <div class="section-inner">
-    <div class="section-label">About Us</div>
-    <h2 class="section-title">Harbour Cloud</h2>
-    <div class="about-layout fade-up">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Harbour Cloud, Microsoft CSP partner in Sydney</h2>
+    <div class="two-col fade-up" style="align-items:center;">
       <div class="about-text">
-        <p>Harbour Cloud is a Sydney-based cloud service provider specialising in Microsoft licensing optimisation, secure cloud architecture, and global infrastructure deployment.</p>
-        <p>We partner with IT managers, CTOs, and enterprise businesses to modernise their infrastructure and dramatically reduce operational costs without sacrificing performance or security.</p>
+        <p>Harbour Cloud is an Australian reseller and managed service provider based in Sydney. We supply and manage Azure, Microsoft 365 licensing and AWS as a Microsoft Cloud Solution Provider, and we build AI projects on top of them.</p>
+        <p>We are a small, senior team, which is the point: we move fast, get things done at a reasonable price, and you deal directly with the people doing the work. Our clients include financial services and trading firms, where security, compliance and uptime are not optional.</p>
+        <!-- TODO(owner): add real testimonials, client logos or case studies here (names only with permission). -->
         <div class="trust-items">
-          <div class="trust-item"><span class="icon">🇦🇺</span> Australian based and operated</div>
-          <div class="trust-item"><span class="icon">🏢</span> Headquartered in Sydney, Barangaroo</div>
-          <div class="trust-item"><span class="icon">⚡</span> Experts in Microsoft, AWS & cloud security</div>
-          <div class="trust-item"><span class="icon">🤝</span> Serving businesses across Sydney, Melbourne & Australia</div>
+          <div class="trust-item"><span class="icon" aria-hidden="true">🇦🇺</span> Australian company, Sydney based</div>
+          <div class="trust-item"><span class="icon" aria-hidden="true">🧑‍💻</span> Senior, hands-on Azure, AWS and Microsoft 365 expertise</div>
+          <div class="trust-item"><span class="icon" aria-hidden="true">⚡</span> Small team, fast turnaround, reasonable price</div>
+          <div class="trust-item"><span class="icon" aria-hidden="true">🏦</span> Financial services and trading clients</div>
+          <div class="trust-item"><span class="icon" aria-hidden="true">🕘</span> Australian time zone</div>
         </div>
       </div>
-      <div class="about-card">
+      <div class="dark-card">
         <h3>Our Office</h3>
-        <p>Centrally located in the heart of Sydney's financial district — available for on-site visits and in-person meetings.</p>
+        <p>In Sydney's financial district and available for in-person meetings.</p>
         <div class="about-address">
           <p>
             <strong>Three International Towers</strong><br>
@@ -1059,21 +741,24 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="section-inner" style="text-align: center; max-width: 600px;">
+<section id="contact">
+  <div class="section-inner" style="text-align:center; max-width:680px;">
     <div class="section-label">Contact</div>
-    <h2 class="section-title">Get in Touch</h2>
-    <p class="section-sub" style="margin: 0 auto 40px;">Have questions about our cloud infrastructure, Microsoft licensing, or security services? Reach out directly to our engineering team.</p>
-    
-    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 48px 32px; display: flex; flex-direction: column; align-items: center; gap: 24px; box-shadow: var(--shadow);">
-      <div style="width: 64px; height: 64px; background: var(--blue-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px;">
-        📧
+    <h2 class="section-title">Talk to an AI and Azure expert</h2>
+    <p class="section-sub" style="margin:0 auto;">Tell us about the work that piles up, the pain points your people complain about, or the AI idea you are weighing up. We are all ears. You will hear back from a senior specialist, not a sales team, usually within one business day.</p>
+    <div class="contact-box fade-up">
+      <h3>Helpful to include</h3>
+      <ul class="feature-list">
+        <li><span class="check">✓</span>Your name and company</li>
+        <li><span class="check">✓</span>Staff count</li>
+        <li><span class="check">✓</span>Your current Microsoft setup, for example Business Premium, E3 or E5</li>
+        <li><span class="check">✓</span>What's on your mind, or the problem you would like AI to take on</li>
+      </ul>
+      <div class="contact-actions">
+        <a href="mailto:oliver@harbourcloud.com.au?subject=AI%20project%20enquiry&amp;body=Name%3A%20%0ACompany%3A%20%0AStaff%20count%3A%20%0ACurrent%20Microsoft%20setup%3A%20%0AWhat%27s%20on%20your%20mind%3A%20" class="btn-primary">Email us →</a>
+        <a href="mailto:oliver@harbourcloud.com.au?subject=Security%20review%20request&amp;body=Name%3A%20%0ACompany%3A%20%0AStaff%20count%3A%20%0ACurrent%20Microsoft%20setup%3A%20%0AWhat%27s%20driving%20the%20review%20(audit%2C%20cyber%20insurance%2C%20client%20due%20diligence)%3A%20" class="btn-secondary">Request a security review</a>
       </div>
-      <div>
-        <h3 style="font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 8px;">Email Us</h3>
-        <p style="font-size: 15px; color: var(--muted); margin-bottom: 24px;">We aim to respond to all enquiries within one business day.</p>
-        <a href="mailto:hello@harbourcloud.com.au" class="btn-primary" style="padding: 16px 32px; font-size: 16px;">hello@harbourcloud.com.au</a>
-      </div>
+      <p class="contact-email">Or write directly to <a href="mailto:oliver@harbourcloud.com.au">oliver@harbourcloud.com.au</a></p>
     </div>
   </div>
 </section>
@@ -1082,25 +767,26 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <span class="footer-logo-text">Harbour Cloud</span>
-        </div>
-        <p class="footer-tagline">Cloud infrastructure and Microsoft licensing specialists for Australian businesses.</p>
+      <div>
+        <span class="footer-logo-text">Harbour Cloud</span>
+        <p class="footer-tagline">AI projects designed, built and run on Azure and AWS, by a small Sydney team that supplies and manages your cloud.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#licensing">Microsoft Licensing</a></li>
-          <li><a href="#architecture">Cloud Architecture</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#contact">Support</a></li>
+          <li><a href="#azure-ai">Azure AI projects</a></li>
+          <li><a href="#ai-agents">AI agents and automation</a></li>
+          <li><a href="#private-ai">Private AI</a></li>
+          <li><a href="#copilot">Copilot readiness</a></li>
+          <li><a href="#managed">AWS accounts and billing</a></li>
+          <li><a href="#managed">Microsoft 365 licensing</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#why-csp">Why a CSP partner</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
@@ -1114,13 +800,11 @@
 </footer>
 
 <script>
-  // Navbar scroll shadow
   const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   });
 
-  // Hamburger menu
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
 
@@ -1136,19 +820,14 @@
     document.body.style.overflow = '';
   }
 
-  // Close menu on outside click
   document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) {
-      closeMobileMenu();
-    }
+    if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) closeMobileMenu();
   });
 
-  // Close menu on resize to desktop
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 680) closeMobileMenu();
+    if (window.innerWidth > 1024) closeMobileMenu();
   });
 
-  // Fade-up on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.08 });
